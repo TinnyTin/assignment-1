@@ -4,6 +4,19 @@ html {
     color: #e0def4;
     background-color: #191724
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9ccfd8;
+}
+
+a:visited {
+    color: #e0def4;
+}
+
 /* Grid
 ----------------------  */
 .container {
@@ -36,19 +49,27 @@ header {
     padding-inline: 0.8em;
 }
 
-a{
-    text-decoration: none;
-    color: #e0def4;
+/* Content
+----------------------  */
+.content {
+    grid-area: content;
 }
 
-a:hover{
-    color: #9ccfd8;
-}
-
-a:visited{
-    color: #e0def4;
-}
-
+/* Footer
+----------------------  */
 footer {
     grid-area: footer;
+    background-color: #1f1d2e
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+footer li {
+    list-style-type: none;
+    padding-inline: 0.8em;
+    
 }
