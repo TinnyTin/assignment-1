@@ -71,24 +71,6 @@ header {
     padding: 0.8em;
 }
 
-/* Sidearea
-----------------------  */
-.sidearea {
-    grid-area: sidearea;
-}
-
-#sidemenu-open-button{
-    font-size: 1.3em;
-    color: #e0def4;
-    padding: 0.6em
-}
-
-#sidemenu-close-button {
-    font-size: 1.3em;
-    margin-left: auto;
-}
-
-
 /* Side Navigation Menu w/o Javascript
 ----------------------  */
 
@@ -112,11 +94,30 @@ header {
     color: #f6c177;
 }
 
+/* Sidearea
+----------------------  */
+.sidearea {
+    grid-area: sidearea;
+}
+
+#sidemenu-open-button{
+    font-size: 1.3em;
+    color: #e0def4;
+    padding: 0.6em
+}
+
+#sidemenu-close-button {
+    font-size: 1.3em;
+    margin-left: auto;
+    transition: 0s;
+}
+
 /* Content
 ----------------------  */
 .content {
     grid-area: content;
     display: flex;
+    justify-content: left;
 }
 
 .note {
