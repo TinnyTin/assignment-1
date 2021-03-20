@@ -24,6 +24,10 @@ a:hover {
     color: #9ccfd8;
 }
 
+li{
+    list-style-type: none;
+}
+
 /* Grid
 ----------------------  */
 .container {
@@ -52,7 +56,6 @@ header {
 }
 
 .topbar li {
-    list-style-type: none;
     padding: 0.8em;
 }
 
@@ -60,12 +63,6 @@ header {
 ----------------------  */
 .sidearea {
     grid-area: sidearea;
-}
-
-.sidenav {
-    background-color:#1f1d2e;
-    width: 250px;
-    height: 100vh;
 }
 
 #sidemenu-open-button{
@@ -91,11 +88,13 @@ header {
     display: flex;
     flex-direction: column;
     transition: 0.4s;
+    background-color:#1f1d2e;
+    width: 250px;
+    height: 100%;
 }
 
-
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0.5em 0.5em 0.5em 2em;
     font-size: 1.1em;
     transition: 0.2s
   }
@@ -108,13 +107,13 @@ header {
 }
 
 .note {
-    padding-top: 20vh
+    padding-top: 20vh;
 }
 
 .note > a{
     color:#ebbcba;
     font-size: 1.3em;
-    padding-right: 0.1em
+    padding-right: 0.1em;
 }
 
 .note a:hover {
@@ -139,7 +138,7 @@ textarea:focus {
 
 .buttons-container{
     display:flex;
-    justify-content:flex-end
+    justify-content:flex-end;
 }
 
 .input-button {
@@ -165,7 +164,6 @@ footer > ul{
 }
 
 footer li {
-    list-style-type: none;
     padding-inline: 0.8em;
 }
 
@@ -181,3 +179,29 @@ footer li {
     color: #6e6a86;
 }
 
+
+/* Responsiveness
+----------------------  */
+@media screen and (max-width: 800px) {
+
+    /* Shrink most elements*/
+    html{
+        font-size: 12px;
+    }
+
+    .note {
+        padding-top: 10vh;
+    }
+
+    .buttons-container{
+        justify-content: flex-start;
+    }
+
+    textarea {
+        max-width: 50%
+    }
+
+    .sidenav{
+        width: 100px
+    }
+}
