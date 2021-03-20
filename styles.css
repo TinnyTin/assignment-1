@@ -1,3 +1,4 @@
+/* Fix overflow */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ a:hover {
     grid-template-columns: 0.5fr 1fr;
     grid-template-areas:
       'header header header'
-      'sidemenu content content'
+      'sidearea content content'
       'footer footer footer';
   }
 
@@ -55,21 +56,49 @@ header {
     padding: 0.8em;
 }
 
-/* Sidemenu
+/* Sidearea
 ----------------------  */
-.sidemenu {
-    grid-area: sidemenu;
+.sidearea {
+    grid-area: sidearea;
 }
 
-#sidemenu-button {
-    font-size: 1.5em;
+.sidenav {
+    background-color:#1f1d2e;
+    width: 250px;
+    height: 100vh;
+}
+
+#sidemenu-open-button{
+    font-size: 1.3em;
     color: #e0def4;
-    padding: 0.5em
+    padding: 0.6em
 }
 
-#sidemenu-button:hover {
+.sidearea > a:hover{
     color: #9ccfd8;
 }
+
+#sidemenu-close-button {
+    font-size: 1.3em;
+    margin-left: auto;
+}
+
+
+/* Side Navigation Menu w/o Javascript
+----------------------  */
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 1.1em;
+    transition: 0.2s
+  }
 
 /* Content
 ----------------------  */
@@ -125,7 +154,7 @@ textarea:focus {
 ----------------------  */
 footer {
     grid-area: footer;
-    background-color: #1f1d2e
+    background-color:  #26233a;
 }
 
 footer > ul{
