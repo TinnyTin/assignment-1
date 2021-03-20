@@ -99,6 +99,13 @@ header {
     transition: 0.2s
   }
 
+.sidenav h2{
+    padding: 0.5em 0.5em 0.5em 2em;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #f6c177;
+}
+
 /* Content
 ----------------------  */
 .content {
@@ -182,11 +189,11 @@ footer li {
 
 /* Responsiveness
 ----------------------  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     /* Shrink most elements*/
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .note {
@@ -198,10 +205,33 @@ footer li {
     }
 
     textarea {
-        max-width: 50%
+        max-width: 80%
     }
 
     .sidenav{
+        width: 150px
+    }
+}
+
+/* Responsiveness, Mobile
+----------------------  */
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+    .note {
+        padding-top: 5vh;
+    }
+
+    textarea {
+        max-width: 40%
+    }
+    .sidenav{
         width: 100px
+    }
+
+    footer > ul{
+        font-size: 1.2em;
+        flex-direction: column;
     }
 }
