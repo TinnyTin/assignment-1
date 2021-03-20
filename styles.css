@@ -83,12 +83,29 @@ header {
 }
 
 .note a{
-    color:#ebbcba
-    
+    color:#ebbcba;
+    font-size: 1.3em;
+    padding-right: 0.1em
 }
 
 .note a:hover {
     color:#9ccfd8;
+}
+
+textarea {
+    vertical-align: top;
+    outline: none;
+    resize: none;
+    width: 500px;
+    height: 400px;
+    border-color: #26233a;
+    background-color: #26233a;
+    color: #e0def4;
+    font-size: 1em;   
+}
+
+textarea:focus {
+    border-color: #6e6a86;
 }
 
 /* Footer
